@@ -1,0 +1,68 @@
+*,*::after,*::before{padding: 0;margin: 0;box-sizing: border-box;}
+@font-face{font-family: fzgljw;src: url('../font/FZGLJW.ttf')}
+body{font-family: 'Avenir', Helvetica, Arial, sans-serif;}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.hide{display: none!important}
+a,body{
+  color: #333;
+}
+body{
+  background-color: #f1f1f1;
+  a{text-decoration: none;}
+  .contain{
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  &.reader-night-mode{
+    background-color: #3f3f3f;
+    color: #c8c8c8;
+    .contain{
+        .main{
+          background-color: #3f3f3f;
+        }
+    }
+    input{
+      color:#666;
+    }
+    textarea{
+      color: #666;
+    }
+  }
+}
+input{
+  color: #666;
+}
+input[type="text"]{
+  -webkit-appearance: none;
+  outline: none;
+  &:focus{
+    outline: none;
+  }
+}
+input[type="password"]{
+  -webkit-appearance: none;
+  outline: none;
+  &:focus{
+    outline: none;
+    border:none;
+  }
+}
+textarea{resize: none;outline: none;color: #666;}
+button{
+  outline: none;
+  cursor: pointer;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color:#ddd;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

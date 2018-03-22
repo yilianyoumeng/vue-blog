@@ -1,0 +1,101 @@
+@import '../../../assets/sass/assets.scss';
+.editor{
+	.tit{
+		font-size: 15px;
+		color: #666;
+		margin-bottom: 30px;
+	}
+	.tagBox{
+		margin-bottom: 20px;
+		.selectBox{
+			position: relative;
+			height: 30px;
+			width: 150px;
+			display: inline-block;
+			border-radius:4px;
+			border:1px solid #ccc;
+			margin-right: 20px;
+			vertical-align: bottom;
+			&::after{
+				content: '';
+				position: absolute;
+				width: 10px;
+				height: 10px;
+				border-right: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;	
+				transform: rotate(45deg);
+				top: 8px;
+				right: 10px;
+			}
+			select{
+				-webkit-appearance:none;
+				-moz-appearance:none;
+				appearance:none;
+				background:transparent;
+				border:none;
+				padding-left:10px;
+				width: 150px;
+				height:100%;
+				// border:1px solid #ccc;
+				border:none;
+				outline: none;
+				&:invalid { color: #ddd; }
+				option{
+					border-left: 1px solid #ccc;
+					border-right: 1px solid #ccc;
+					padding: 15px 10px;
+					color: #333;
+				}
+			}
+		}
+		
+		.newTag{
+				border:none;
+				background-color: #fff;
+				border-bottom: 2px solid $blue;
+				padding: 10px;
+				display: inline-block;
+				vertical-align: bottom;
+		}
+	}
+	.infoTit{
+		border-radius: 4px;
+		border:1px solid #ddd;
+		padding:10px;
+		width: 100%;
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+	.info{
+		border-radius: 4px;
+		border:1px solid #ddd;
+		width: 100%;
+		padding: 10px;
+		height: 500px;
+		font-size: 14px;
+	}
+	.editorContBox{
+	}
+	.w-e-text-container{
+		height: auto!important;
+		min-height: 300px!important;
+	}
+	.w-e-text{
+		overflow-y:auto!important;
+	}
+	.tip{
+		color:#999;
+		font-size: 14px;
+		padding-left: 20px;
+		padding-bottom: 5px;
+	}
+	.normal_btn{
+		@include normal_btn;
+		width: 150px;
+		margin: 30px auto;
+		display: block;
+		.btn_disable{
+		@include  normal_btn_disable
+		}
+	}
+}

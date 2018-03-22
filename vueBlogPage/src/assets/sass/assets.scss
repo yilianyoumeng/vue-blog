@@ -1,0 +1,40 @@
+$night-color: #3f3f3f;
+$blue:#55aff1;
+$orange:#f39668;
+$green:#68f37a;
+@mixin big_tit{color:#8eb9f5;font-size:20px;line-height: 1.2;}
+@mixin big_btn{color:#fff;border-radius: 8px;border:none;text-align: center;font-size: 16px;line-height: 2.5;background-color: #55aff1;}
+@mixin big_btn_disable{background-color: #c8c8c8;}
+@mixin big_btn_loading{background-color:#8eb9f5;}
+@mixin normal_btn{color:#fff;border-radius: 5px;border:none;text-align: center;font-size: 14px;line-height: 2;background-color: #55aff1;}
+@mixin normal_btn_disable{background-color: #c8c8c8;}
+@mixin normal_btn_loading{background-color:#8eb9f5;}
+@mixin closeBtn{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 2px;
+		top: 15px;
+		background: #666;
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		right: 0;
+	}
+	&:after{
+		content: '';
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 2px;
+		top: 15px;
+		background: #666;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+		right: 0;
+	}
+}

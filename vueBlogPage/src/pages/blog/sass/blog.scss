@@ -1,0 +1,71 @@
+@import '../../../assets/sass/assets.scss';
+.blog{
+    .contain{
+        width: 600px;
+      .tit{
+        // font-size: 18px;
+        font-weight: bold;
+      }
+      .blogInfo{
+        font-size: 12px;
+        color: #999;
+        margin: 10px 0;
+        .tag{
+          border-radius: 4px;
+          display: inline-block;
+          vertical-align: middle;
+          padding:0 4px;
+          margin-right: 10px;
+          &.blue{
+            color: $blue;
+            border:1px solid $blue;
+          }
+          &.orange{
+            color: $orange;
+            border:1px solid $orange;
+          }
+        }
+        .note{
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 30px;
+          span{
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+          &::before{
+            content:'';
+            display: inline-block;
+            vertical-align: middle;
+            width:20px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url(../img/time.png);
+            margin-right: 5px;
+          }
+        }
+        .read{
+          &::before{
+            background-image: url(../img/read.png);
+          }
+        }
+      }
+      .blogCont{
+        padding: 10px 0;
+        p{
+          margin-bottom: 20px;
+        }
+      }
+      .caoZuo{
+        margin-top: 20px;
+        .change,.change a,.delete{
+          color: #999;
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      
+    }
+  }
