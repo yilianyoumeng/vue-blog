@@ -23,7 +23,6 @@ var app = express()
 var compiler = webpack(webpackConfig)
 //设置跨域访问 add by xiaodan
 var proxy = require("express-http-proxy");
-//var baseUrl ='http://dev-bank.i2p.com';
 var baseUrl ='http://localhost:8088';
 //var baseUrl='http://10.11.30.226';
 app.use('/apiEx', proxy(baseUrl));
