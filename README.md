@@ -2,6 +2,12 @@
 vue-blog 是由node做后端服务器开发接口，mongodb做数据库，vue处理前端的简单单页面博客。
 包含管理员及游客两个角色，管理员可以操作博客的编辑和增删改查，游客只可浏览。
 博客内容包括标题，固定标签，自定义标签，编辑时间，浏览次数，博客内容
+# 目录描述
+- `build` - dev server 目录，包括webpack等
+- `server` - 后端接口及数据连接
+- `package.json` - npm 依赖列表.
+- `src` - vue前端页面及静态资源
+- `index.html` - vue入口文件
 
 # 安装及运行
 1. 下载mongodb并安装
