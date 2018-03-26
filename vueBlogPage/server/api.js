@@ -11,8 +11,8 @@ const baseUrl = 'http://localhost:8080/#'
 /************** 创建(set) 读取(get) 更新(change) 删除(delete) **************/
 //强制增加管理员
 let admain = new models.Login({
-        phone : '18668017235',
-        password : 'zhuzhidan123'
+        phone : '18600000000',
+        password : '123456'
     });
 // 保存数据admain数据进mongoDB
 admain.save();
